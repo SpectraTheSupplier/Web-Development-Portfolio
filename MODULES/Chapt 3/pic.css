@@ -1,0 +1,38 @@
+/* Set up the main layout with centered content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of viewport */
+    background: linear-gradient(135deg, #221f1f, #6d67657e); /* Gradient background */
+    overflow: hidden;
+}
+
+/* Container for images with a glassmorphism effect */
+.container {
+    display: flex;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Styling for each image block */
+.image-container {
+    text-align: center; /* Center text and images */
+}
+
+/* Styling for images */
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Scale effect on hover */
+.image-container img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}

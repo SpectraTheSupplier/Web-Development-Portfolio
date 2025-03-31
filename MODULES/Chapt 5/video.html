@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Video</title>
+    
+    <!-- Internal CSS Styling -->
+    <style>
+        /* Centering the body content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            background-color: #FFB742; /* Background color */
+        }
+        
+        /* Styling for the video element */
+        video {
+            max-width: 60%; /* Ensures video is responsive */
+            height: auto; /* Maintains aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Element with Controls -->
+    <video controls loop poster="gigi.png">
+        <!-- Video Source -->
+        <source src="BOATBINTED.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

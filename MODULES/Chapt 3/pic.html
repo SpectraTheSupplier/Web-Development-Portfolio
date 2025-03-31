@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Apply an invert filter to the first image */
+        #img1 {
+            filter: invert(100%);
+        }
+        
+        /* Apply a hue-rotate filter to the second image */
+        #img2 {
+            filter: hue-rotate(90deg);
+        }
+
+        /* Apply a blur filter to the third image */
+        #img3 {
+            filter: blur(2px);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters on Images</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="pic.css">
+</head>
+<body>
+    <div class="row"> <!-- Container for all images -->
+        <div class="image-container"> <!-- Image block 1 -->
+            <img id="img1" src="glass.jpg"> <!-- Image with invert filter -->
+            <img src="glass.jpg" alt="brent"> <!-- Original image for comparison -->
+            <p>Photo by Ethan De Guzman || Invert Filter</p>
+        </div>
+        <div class="image-container"> <!-- Image block 2 -->
+            <img id="img2" src="portrait.jpg"> <!-- Image with hue-rotate filter -->
+            <img src="portrait.jpg" alt="itan"> <!-- Original image for comparison -->
+            <p>Photo by Ethan De Guzman || Hue-rotate Filter</p>
+        </div>
+        <div class="image-container"> <!-- Image block 3 -->
+            <img id="img3" src="shutter.jpg"> <!-- Image with blur filter -->
+            <img src="shutter.jpg" alt="thea"> <!-- Original image for comparison -->
+            <p>Photo by Ethan De Guzman || Blur Filter</p>
+        </div>
+    </div>
+</body>
+</html>
